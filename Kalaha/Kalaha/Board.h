@@ -10,6 +10,7 @@ private:
 	static const int STONECAPACITY = 72;
 	int* logic;
 	Stone** stones;
+	sf::Sprite tiles[CAPACITY];
 
 public:
 	Board();
