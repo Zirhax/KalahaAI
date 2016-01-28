@@ -4,7 +4,7 @@
 enum Tiles
 {
 	normal,
-	goal;
+	goal
 };
 
 #endif

@@ -6,7 +6,7 @@ Board::Board()
 	this->logic = new int[this->CAPACITY];
 	for (int i = 0; i < this->CAPACITY; i++)
 	{
-		if (i == 7)
+		if (i == 6)
 		{
 			this->logic[i] = goal;
 		}
@@ -20,4 +20,17 @@ Board::Board()
 		}
 	}
 }
+Board::~Board()
+{
+	delete[]this->logic;
+}
 
+int Board::getLogic(int index) const
+{
+	return this->logic[index];
+}
+
+//void Board::draw(sf::RenderTarget &target, sf::RenderStates states) const
+//{
+//
+//}
